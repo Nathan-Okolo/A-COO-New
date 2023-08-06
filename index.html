@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plumberz - Free Plumbing Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a href="" class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0">Plumberz</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <p class="m-0">123 Street, New York, USA</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                    <p class="m-0">info@example.com</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <!-- <h1 class="text-primary m-0">Plumberz</h1> -->
+                <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <img src="./img/logo.jpeg" width="60" height="60" class="mr-30" alt="company's logo">
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 d-flex align-items-center">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="team.html" class="dropdown-item">Technicians</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="https://img.freepik.com/free-photo/group-five-african-college-students-campus-university-yard-hold-empty-white-blank-free-space-your-text-black-afro-friends-studying_627829-6147.jpg?w=1480&t=st=1691337599~exp=1691338199~hmac=1bdac42f344be4ff5d3da737e282f3f355cdbd5784e90c00ea415372d9d15e1a" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a dream, we will share it with you and make it real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="https://img.freepik.com/free-photo/male-employee-getting-used-his-new-office-job-along-with-female-colleagues_23-2149034605.jpg?w=1480&t=st=1691337534~exp=1691338134~hmac=6dabcd1747e90d330c35fd28768165d8b417c77947a428eda23d836ca0199879" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a plan, we will develop it until it becomes alive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="https://img.freepik.com/free-photo/group-afro-americans-working-together_1303-8983.jpg?w=1480&t=st=1691337355~exp=1691337955~hmac=a1f0ecf31f4556baa3c4f03e3041e105a86cfa24975558ca7ea5565f923ffcae" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you desire a life, we will breathe into it to make it true.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Residential Plumbing</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Commercial Plumbing</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
+                        <h5 class="text-truncate me-3 mb-0">Emergency Servicing</h5>
+                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href=""><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Service End -->
+
+    <!-- Our Vision Start -->
+
+    <!-- <div class="container-xxl py-5">
+        <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
+            <h1 class="text-uppercase">Our Vision</h1>
+            <p class="mb-4">To be the foremost solution provider for creating business and educational visions.</p>
+        </div>
+        <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
+            <h1 class="text-secondary text-uppercase">Mission Statement</h1>
+            <p class="mb-4">Our mission is to create your vision through value because, When you help people succeed, you become successful. And when you become successful, you become synonymous with success.</p>
+        </div>
+    </div> -->
+    <!-- Our Vision End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Vision</h6>
+                    <p class="mb-4">To be the foremost solution provider for creating business and educational visions.</p>
+                    <h6 class="text-secondary text-uppercase">Mission Statement</h6>
+                    <p class="mb-4">Our mission is to create your vision through value because, When you help people succeed, you become successful. And when you become successful, you become synonymous with success.</p>
+                    <h6 class="text-secondary text-uppercase">Why A-COO</h6>
+                    <h1 class="mb-4">We are real and work with you along the path to success based on experience and years of expert delivery of service.</h1>
+                    <p class="mb-4">At A-COO Edu Consult, your success is our priority, and our success is dependent on your success. So, if we help you succeed, then we have succeeded. There is no limit to what we can assist you with educationally.</p>
+                    <p><h3>What we can do for you</h3> We have tailored and expert assistants for</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Research and research analyses (qualitative, quantitative, thematic, etc.)</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proposals, theses, and dissertations</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proofreading and publication</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Admissions and scholarship applications (Nigeria and the UK)</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Distant learning advisory and admissions</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Career Progress Consulting and Services</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Business plans and proposals</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Jobs and applications</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>General education consults and experts advisory</p>
+                    <div class="bg-primary d-flex align-items-center p-4 mt-5">
+                        <div class="ms-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-4" style="min-height: 500px;">
+                    <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="https://img.freepik.com/free-photo/four-happy-students-near-university-campus_496169-100.jpg?size=626&ext=jpg&uid=R34978299&ga=GA1.2.12857751.1689598416&semt=ais" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
+                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="https://img.freepik.com/premium-photo/african-student-female-posed-with-backpack-school-items-yard-university-against-flags-different-countries_627829-5988.jpg?w=1480" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-fluid fact bg-dark my-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Expert Technicians</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Satisfied Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-wrench fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Compleate Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
+                    <p>All our services have the following options:</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon">
+                                <i class="fa fa-shield-alt text-white"></i>
+                            </div>
+                            <h4 class="mb-3">Free</h4>
+                            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon">
+                                <i class="fa fa-chart-pie text-white"></i>
+                            </div>
+                            <h4 class="mb-3">Premium</h4>
+                            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon">
+                                <i class="fa fa-code text-white"></i>
+                            </div>
+                            <h4 class="mb-3">Super Premium(priority)</h4>
+                            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+     <!-- Blog Start -->
+     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
+                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156390.jpg?w=1480&t=st=1691355459~exp=1691356059~hmac=4be53c7b8a68ff4d5be8ccf5e786515be8750b05cf5d4afd99ac3d6822e7e461" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156378.jpg?w=1480&t=st=1691355548~exp=1691356148~hmac=9082ceb6f0b63aa8996e47503180887fb945af6362b45661ecc2c21effe1b4c6" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://img.freepik.com/premium-photo/group-people-sitting-bench-typing-smart-phone_368093-324.jpg?w=1480" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Technicians</h6>
+                <h1 class="mb-5">Our Expert Technicians</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="bg-primary">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="bg-primary">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="bg-primary">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text">
+                            <div class="bg-light">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                            <div class="bg-primary">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Client Name</h5>
+                    <p class="m-0">Profession</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+     <!-- Booking Start -->
+     <div class="container-fluid my-5 px-0">
+        <div class="video wow fadeInUp" data-wow-delay="0.1s">
+            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                <span></span>
+            </button>
+
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 16:9 aspect ratio -->
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-light text-center p-5">
+                        <h1 class="mb-4">Get In Touch</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Contact Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <h5 class="text-light mb-4">Taraba State</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 1 Trinidax Road, Roadblock Jalingo
+                        Taraba State </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2348133758770 </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <br><br>
+                    <h5 class="text-light mb-4">Ebonyi State </h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>95 Democracy Estate, Abakaliki
+                        Flat 1 F & C Quarters Amankwo, Afikpo </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2348131137854 </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <br><br>
+                    <h5 class="text-light mb-4">Anambra State</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>23 New Market Road, Onitsha, Anambra State </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2348029487353 </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Lagos Contacts</h4>
+                    <p>Timothy: 09072701146 or Aminat 08109148500.</p>
+                    <p>WhatsApp Only +2348036736434</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
