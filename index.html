@@ -576,6 +576,41 @@
     </div>
     <!-- Booking End -->
 
+    <style>
+    .floating-whatsapp {
+    position: fixed;
+    bottom: 200px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.floating-whatsapp a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* WhatsApp green color */
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.floating-whatsapp a:hover {
+    background-color: #128C7E; /* Darker WhatsApp green color on hover */
+}
+
+    </style>
+
+    <div class="floating-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=PHONE_NUMBER_HERE" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
