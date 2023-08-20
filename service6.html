@@ -42,22 +42,29 @@
     <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid nav-bar bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
-            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <!-- <h1 class="text-primary m-0">Plumberz</h1> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav me-auto">
-                <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
-                </div>
-                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 d-flex align-items-center">
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="about.html" class="nav-item nav-link ">About</a>
+     <!-- Navbar Start -->
+     <style>
+        @media (max-width: 991.98px) {
+        .navbar-nav .d-none {
+        display: none !important;
+        }
+        }
+    </style>
+<div class="container-fluid nav-bar bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+        <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+            <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto">
+                <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo" class="d-none d-lg-block">
+            </div>
+            <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 d-flex align-items-center">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu fade-up m-0">
@@ -67,7 +74,7 @@
                             <a href="service3.html" class="dropdown-item">Academic and Publication Assistant </a>
                             <a href="service4.html" class="dropdown-item">Business Partnership and Business Assistant</a>
                             <a href="service5.html" class="dropdown-item"> Digital class and Distant Learning Programs.</a>
-                            <a href="service6.html" class="dropdown-item active"> Study Loan and Finance.</a>
+                            <a href="service6.html" class="dropdown-item"> Study Loan and Finance.</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
