@@ -44,6 +44,47 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <style>
+        /* Styles for the overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            z-index: 9999; /* Ensure it appears on top of other content */
+        }
+
+        /* Styles for the close button */
+        .close-button {
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 50px;
+        }
+
+        /* Style for the advert image */
+        .advert-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 80%;
+        }
+        @media (max-width: 768px) {
+            .close-button {
+                top: 90px; /* Adjust top position for smaller screens */
+                right: 10px; /* Adjust right position for smaller screens */
+                font-size: 30px; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -53,39 +94,46 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
+    <!-- Overlay -->
+    <div class="overlay" id="overlay">
+        <!-- Close button -->
+        <div class="close-button" id="close-button">×</div>
+        
+        <!-- Advert image -->
+        <a href="contact.html">
+        <img src="https://i.stack.imgur.com/ob7ey.jpg" alt="Advert" class="advert-image">
+        </a>
+    </div>
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-light d-none d-lg-block">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-3 col-md-12 text-center text-lg-start">
-                <a href="" class="navbar-brand m-0 p-0">
-                    <h1 class="text-primary m-0">Plumberz</h1>
-                </a>
-            </div>
-            <div class="col-lg-9 col-md-12 text-end">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    <p class="m-0">123 Street, New York, USA</p>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-envelope-open text-primary me-2"></i>
-                    <p class="m-0">info@acooconsults.com</p>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
+    <script>
+        const images = [
+            "https://i.stack.imgur.com/ob7ey.jpg", // Image 1
+            "https://i.stack.imgur.com/KDomO.jpg" // Image 2 (replace with the actual URL)
+        ];
 
+        let currentIndex = 0;
 
-    <!-- Navbar Start -->
+        // Function to change the image source
+        function changeImage() {
+            const advertImage = document.querySelector('.advert-image');
+            advertImage.src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // JavaScript to show the overlay and advert on page load
+        window.onload = function() {
+            document.getElementById('overlay').style.display = 'block';
+            setInterval(changeImage, 4000); // Change image every 4 seconds
+        };
+
+        // JavaScript to close the overlay when the close button is clicked
+        document.getElementById('close-button').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+        });
+    </script>
+    
+    <!-- Navbar start  -->
     <style>
         @media (max-width: 991.98px) {
         .navbar-nav .d-none {
@@ -153,7 +201,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://i.pinimg.com/564x/a0/5e/5c/a05e5c151231cd0354bd4f01d86fa70f.jpg" alt="">
+                <img class="img-fluid" src="https://img.freepik.com/free-photo/medium-shot-colleagues-posing-together_23-2148950574.jpg?w=1800&t=st=1694476349~exp=1694476949~hmac=cfb9bffdc14c7d4c9006d9045d7e3fcd8d587eecc2a61273c6fbeb7ae4acb20b" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -167,7 +215,7 @@
             </div>
 
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://i.pinimg.com/564x/65/2a/75/652a75f2f15af37a7a13dc57ded22239.jpg" alt="">
+                <img class="img-fluid" src="https://img.freepik.com/free-photo/focus-african-girl-who-standing-sepately-shows-thumb-up-group-international-students-standing-together-park-university_1157-50079.jpg?w=1800&t=st=1694476471~exp=1694477071~hmac=fd414c7c742bea3b4632edfbcf890ff3166e3d49b04652e5b56a6c2eeefeafa0" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -203,7 +251,7 @@
                     <p><h5>What we can do for you</h5> We have tailored and expert assistants for</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Research and research analyses (qualitative, quantitative, thematic, etc.)</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proposals, theses, and dissertations</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proofreading and publication</p>
+                    <!-- <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proofreading and publication</p> -->
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Admissions and scholarship applications (Nigeria and the UK)</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Distant learning advisory and admissions</p>
                     <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Career Progress Consulting and Services</p>
