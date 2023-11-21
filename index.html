@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -32,16 +33,16 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/64f9f19aa91e863a5c123aad/1h9o5fhi2';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/64f9f19aa91e863a5c123aad/1h9o5fhi2';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 
@@ -54,8 +55,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-            z-index: 9999; /* Ensure it appears on top of other content */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Semi-transparent black background */
+            z-index: 9999;
+            /* Ensure it appears on top of other content */
         }
 
         /* Styles for the close button */
@@ -77,11 +80,15 @@
             max-width: 100%;
             max-height: 80%;
         }
+
         @media (max-width: 768px) {
             .close-button {
-                top: 90px; /* Adjust top position for smaller screens */
-                right: 10px; /* Adjust right position for smaller screens */
-                font-size: 30px; /* Adjust font size for smaller screens */
+                top: 90px;
+                /* Adjust top position for smaller screens */
+                right: 10px;
+                /* Adjust right position for smaller screens */
+                font-size: 30px;
+                /* Adjust font size for smaller screens */
             }
         }
     </style>
@@ -89,7 +96,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -99,10 +107,10 @@
     <div class="overlay" id="overlay">
         <!-- Close button -->
         <div class="close-button" id="close-button">×</div>
-        
+
         <!-- Advert image -->
         <a href="contact.html">
-        <img src="https://i.stack.imgur.com/nEQqG.jpg" alt="Advert" class="advert-image">
+            <img src="https://i.stack.imgur.com/nEQqG.jpg" alt="Advert" class="advert-image">
         </a>
     </div>
 
@@ -123,40 +131,40 @@
         }
 
         // JavaScript to show the overlay and advert on page load
-        window.onload = function() {
+        window.onload = function () {
             document.getElementById('overlay').style.display = 'block';
             setInterval(changeImage, 5000); // Change image every 4 seconds
         };
 
         // JavaScript to close the overlay when the close button is clicked
-        document.getElementById('close-button').addEventListener('click', function() {
+        document.getElementById('close-button').addEventListener('click', function () {
             document.getElementById('overlay').style.display = 'none';
         });
     </script>
-    
+
     <!-- Navbar start  -->
     <style>
         @media (max-width: 991.98px) {
-        .navbar-nav .d-none {
-        display: none !important;
-        }
+            .navbar-nav .d-none {
+                display: none !important;
+            }
         }
     </style>
-<div class="container-fluid nav-bar bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
-        <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-            <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto">
-                <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo" class="d-none d-lg-block">
-            </div>
-            <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 d-flex align-items-center">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo" class="d-none d-lg-block">
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 d-flex align-items-center">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu fade-up m-0">
@@ -164,8 +172,10 @@
                             <a href="service1.html" class="dropdown-item">Admissions and International Studies</a>
                             <a href="service2.html" class="dropdown-item">Jobs and Career Assistant</a>
                             <a href="service3.html" class="dropdown-item">Academic and Publication Assistant </a>
-                            <a href="service4.html" class="dropdown-item">Business Partnership and Business Assistant</a>
-                            <a href="service5.html" class="dropdown-item"> Digital class and Distant Learning Programs.</a>
+                            <a href="service4.html" class="dropdown-item">Business Partnership and Business
+                                Assistant</a>
+                            <a href="service5.html" class="dropdown-item"> Digital class and Distant Learning
+                                Programs.</a>
                             <a href="service6.html" class="dropdown-item"> Study Loan and Finance.</a>
                             <a href="service6.html" class="dropdown-item"> Accounts and Financial Services</a>
                         </div>
@@ -190,12 +200,14 @@
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="https://i.stack.imgur.com/28Rtj.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a dream, you share it with us and we will make it real.</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a dream, you share it with us
+                                    and we will make it real.</p>
                             </div>
                         </div>
                     </div>
@@ -203,12 +215,14 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/img.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a plan, we will develop it until it becomes alive.</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you have a plan, we will develop it
+                                    until it becomes alive.</p>
                             </div>
                         </div>
                     </div>
@@ -217,12 +231,14 @@
 
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, .4);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">A-COO EDU CONSULTS</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you desire a life, we will breathe into it to make it true.</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">If you desire a life, we will breathe
+                                    into it to make it true.</p>
                             </div>
                         </div>
                     </div>
@@ -242,23 +258,37 @@
             </div>
             <div class="section-title position-relative pb-3 mb-5 text-center">
                 <h5 class="fw-bold  text-primary text-uppercase">Mission Statement</h5>
-                <p class="mb-0">Our mission is to create your vision through value because, When you help people succeed, you become successful. And when you become successful, you become synonymous with success.</p>
+                <p class="mb-0">Our mission is to create your vision through value because, When you help people
+                    succeed, you become successful. And when you become successful, you become synonymous with success.
+                </p>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="text-primary text-uppercase">Why A-COO</h5>
-                    <h6 class="mb-4">We are real and work with you along the path to success based on experience and years of expert delivery of service.</h6>
-                    <p class="mb-4">At A-COO Edu Consult, your success is our priority, and our success is dependent on your success. So, if we help you succeed, then we have succeeded. There is no limit to what we can assist you with educationally and business wise.</p>
-                    <p><h5>What we can do for you</h5> We have tailored and expert assistants for</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Research and research analyses (qualitative, quantitative, thematic, etc.)</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proposals, theses, and dissertations</p>
+                    <h6 class="mb-4">We are real and work with you along the path to success based on experience and
+                        years of expert delivery of service.</h6>
+                    <p class="mb-4">At A-COO Edu Consult, your success is our priority, and our success is dependent on
+                        your success. So, if we help you succeed, then we have succeeded. There is no limit to what we
+                        can assist you with educationally and business wise.</p>
+                    <p>
+                    <h5>What we can do for you</h5> We have tailored and expert assistants for</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Research and research
+                        analyses (qualitative, quantitative, thematic, etc.)</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proposals,
+                        theses, and dissertations</p>
                     <!-- <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Academic proofreading and publication</p> -->
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Admissions and scholarship applications (Nigeria and the UK)</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Distant learning advisory and admissions</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Career Progress Consulting and Services</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Business plans and proposals</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Jobs and applications</p>
-                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>General education consults and experts advisory</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Admissions and
+                        scholarship applications (Nigeria and the UK)</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Distant learning
+                        advisory and admissions</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Career Progress
+                        Consulting and Services</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Business plans and
+                        proposals</p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>Jobs and applications
+                    </p>
+                    <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i>General education
+                        consults and experts advisory</p>
                     <div class="bg-primary d-flex align-items-center p-4 mt-5">
                         <div class="ms-3">
                         </div>
@@ -266,8 +296,11 @@
                 </div>
                 <div class="col-lg-6 pt-4" style="min-height: 500px;">
                     <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="https://i.stack.imgur.com/EYbF3.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="https://i.pinimg.com/564x/df/96/12/df9612367e292d2d68cc9fac288d64fd.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="https://i.stack.imgur.com/EYbF3.jpg"
+                            style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
+                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
+                            src="https://i.pinimg.com/564x/df/96/12/df9612367e292d2d68cc9fac288d64fd.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -280,9 +313,10 @@
     <!-- Service Start -->
     <style>
         .img-5x5 {
-        width: 5rem; /* 1 rem is typically equivalent to the font-size of the root element (usually the <html> tag) */
-        height: 15rem;
-}
+            width: 5rem;
+            /* 1 rem is typically equivalent to the font-size of the root element (usually the <html> tag) */
+            height: 15rem;
+        }
     </style>
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -293,122 +327,150 @@
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://i.pinimg.com/564x/69/4a/dc/694adc0fef257d44d00aaf2c2be550a2.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://i.pinimg.com/564x/69/4a/dc/694adc0fef257d44d00aaf2c2be550a2.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Research and Research Analyses</h6>
                             <p>
                                 Our team is made up of expert educational consultants and researchers, educational ...
                             </p>
-                            <a class="text-uppercase" href="/service.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://i.pinimg.com/564x/24/30/f0/2430f0496b5753ce53e420bd9a3d0559.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service1.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://i.pinimg.com/564x/24/30/f0/2430f0496b5753ce53e420bd9a3d0559.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service1.html">Read More</a>
                         </div>
                         <div class="p-4">
 
                             <h6 class="mb-3">Admissions and International Studies</h6>
                             <p>
-                                Do you want to study in Nigeria or the UK (Campus and distance learning) 
+                                Do you want to study in Nigeria or the UK (Campus and distance learning)
                                 for ...
                             </p>
-                            <a class="text-uppercase" href="/service1.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service1.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://img.freepik.com/free-photo/afro-american-man-suit-pitching-business-idea-female-colleague-office_1098-20607.jpg?w=900&t=st=1691588354~exp=1691588954~hmac=e24ef8481748d7dfd542ae9e2743ea9693e0b61bbfd1d71041192ddf9e54b1a4" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service2.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://img.freepik.com/free-photo/afro-american-man-suit-pitching-business-idea-female-colleague-office_1098-20607.jpg?w=900&t=st=1691588354~exp=1691588954~hmac=e24ef8481748d7dfd542ae9e2743ea9693e0b61bbfd1d71041192ddf9e54b1a4"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service2.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Jobs and Career Assistant</h6>
                             <p>
                                 Are you a young graduate, an experienced, skilled, or unskilled applicant? Do ...
                             </p>
-                            <a class="text-uppercase" href="/service2.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service2.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://img.freepik.com/free-photo/young-student-working-assignment_23-2149257180.jpg?w=1060&t=st=1691592823~exp=1691593423~hmac=e92c7f9fa5f5cc6c11533d03395653d28837d91da1a63c3cceda9cf965a61abc" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service3.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://img.freepik.com/free-photo/young-student-working-assignment_23-2149257180.jpg?w=1060&t=st=1691592823~exp=1691593423~hmac=e92c7f9fa5f5cc6c11533d03395653d28837d91da1a63c3cceda9cf965a61abc"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service3.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Academic and Publication Assistant</h6>
                             <p>
                                 Do you have an idea? Do you wish to publish the idea? Have you written ...
                             </p>
-                            <a class="text-uppercase" href="/service3.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service3.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://i.pinimg.com/564x/92/a1/10/92a110bbfa3429c880ce7bd0ccc6e74f.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service4.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://i.pinimg.com/564x/92/a1/10/92a110bbfa3429c880ce7bd0ccc6e74f.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service4.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Business Partnership and Business Assistant</h6>
                             <p>
                                 What about your business? Are you facing management and administration ...
                             </p>
-                            <a class="text-uppercase" href="/service4.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service4.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://img.freepik.com/free-vector/online-education-abstract-background-with-male-character-sitting-desk-big-smartphone-looking-blackboard-with-start-video-icon-isometric_1284-60674.jpg?w=1060&t=st=1691592954~exp=1691593554~hmac=e0ca393e61da8bcc27408688bc13bce9b2773dffb99ee8bab545c2f3b17b866c" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service5.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://img.freepik.com/free-vector/online-education-abstract-background-with-male-character-sitting-desk-big-smartphone-looking-blackboard-with-start-video-icon-isometric_1284-60674.jpg?w=1060&t=st=1691592954~exp=1691593554~hmac=e0ca393e61da8bcc27408688bc13bce9b2773dffb99ee8bab545c2f3b17b866c"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service5.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Digital class and Distant Learning Programs.</h6>
                             <p>
                                 Are you too busy to attend physical classes or send your employees and staff to ...
                             </p>
-                            <a class="text-uppercase" href="/service5.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service5.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://i.pinimg.com/564x/92/a1/10/92a110bbfa3429c880ce7bd0ccc6e74f.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service6.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://i.pinimg.com/564x/92/a1/10/92a110bbfa3429c880ce7bd0ccc6e74f.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service6.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Study Loans and Finance</h6>
                             <p>
                                 We offer varieties of funding options for students and for studies. Our loan and ...
                             </p>
-                            <a class="text-uppercase" href="/service6.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service6.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid img-5x5" src="https://i.pinimg.com/564x/7c/76/85/7c7685b4cdf1f917ab0191b5b9d29ce1.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/service7.html">Read More</a>
+                            <img class="img-fluid img-5x5"
+                                src="https://i.pinimg.com/564x/7c/76/85/7c7685b4cdf1f917ab0191b5b9d29ce1.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/service7.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <h6 class="mb-3">Accounts and Financial Services</h6>
                             <p>
-                                We have a team of seasoned and experienced professional accountants with speciality in ...
+                                We have a team of seasoned and experienced professional accountants with speciality in
+                                ...
                             </p>
-                            <a class="text-uppercase" href="/service7.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a class="text-uppercase" href="/service7.html">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -447,8 +509,8 @@
     </div>
     <!-- Fact End -->
 
-     <!-- Blog Start -->
-     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
@@ -458,8 +520,11 @@
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                     <div class="blog-item bg-light rounded overflow-hidden">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156390.jpg?w=1480&t=st=1691355459~exp=1691356059~hmac=4be53c7b8a68ff4d5be8ccf5e786515be8750b05cf5d4afd99ac3d6822e7e461" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Read More</a>
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156390.jpg?w=1480&t=st=1691355459~exp=1691356059~hmac=4be53c7b8a68ff4d5be8ccf5e786515be8750b05cf5d4afd99ac3d6822e7e461"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/blog.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <!-- <div class="d-flex mb-3">
@@ -468,7 +533,8 @@
                             </div> -->
                             <h4 class="mb-3">
                                 What you need to know about UK Admissions and Studies</h4>
-                            <p>While different schools have different demands and requirements for postgraduate studies)</p>
+                            <p>While different schools have different demands and requirements for postgraduate studies)
+                            </p>
                             <a class="text-uppercase" href="/blog.html">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -476,8 +542,11 @@
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                     <div class="blog-item bg-light rounded overflow-hidden">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156378.jpg?w=1480&t=st=1691355548~exp=1691356148~hmac=9082ceb6f0b63aa8996e47503180887fb945af6362b45661ecc2c21effe1b4c6" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Read More</a>
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/free-photo/study-group-african-people_23-2149156378.jpg?w=1480&t=st=1691355548~exp=1691356148~hmac=9082ceb6f0b63aa8996e47503180887fb945af6362b45661ecc2c21effe1b4c6"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/blog.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <!-- <div class="d-flex mb-3">
@@ -485,7 +554,8 @@
                                 <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                             </div> -->
                             <h4 class="mb-3">Why take UCW's MBA?</h4>
-                            <p>Our accredited MBA program prepares you to tackle challenging situations and drive the success</p>
+                            <p>Our accredited MBA program prepares you to tackle challenging situations and drive the
+                                success</p>
                             <a class="text-uppercase" href="/blog.html">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -493,8 +563,11 @@
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
                     <div class="blog-item bg-light rounded overflow-hidden">
                         <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://img.freepik.com/premium-photo/group-people-sitting-bench-typing-smart-phone_368093-324.jpg?w=1480" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="/blog.html">Read More</a>
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/premium-photo/group-people-sitting-bench-typing-smart-phone_368093-324.jpg?w=1480"
+                                alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                                href="/blog.html">Read More</a>
                         </div>
                         <div class="p-4">
                             <!-- <div class="d-flex mb-3">
@@ -502,7 +575,8 @@
                                 <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                             </div> -->
                             <h4 class="mb-3">Qualify to earn CDMA, CDMP and CPHR certifications</h4>
-                            <p>Our accredited MBA program prepares you to tackle challenging situations and drive the success</p>
+                            <p>Our accredited MBA program prepares you to tackle challenging situations and drive the
+                                success</p>
                             <a class="text-uppercase" href="/blog.html">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -523,10 +597,13 @@
             <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0"> The prompt response to messages and calls kept me, the use of mild and assuring words were more 
+                        <p class="mb-0"> The prompt response to messages and calls kept me, the use of mild and assuring
+                            words were more
                             smoothing than imagined.</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -539,10 +616,13 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">I felt pampered; I was treated with respect and priority. Admission in one week, CAS in three days and 
+                        <p class="mb-0">I felt pampered; I was treated with respect and priority. Admission in one week,
+                            CAS in three days and
                             after service support till arrival in the UK came at a zero charge.</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -555,10 +635,13 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0"> Always assuring and promising with the right words. Thank you for making it easy for I and my 
+                        <p class="mb-0"> Always assuring and promising with the right words. Thank you for making it
+                            easy for I and my
                             husband. You guys are dedicated.</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -571,10 +654,13 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Although my call was almost at the deadline hours, I was assured, I was assisted. Admission and CAS 
+                        <p class="mb-0">Although my call was almost at the deadline hours, I was assured, I was
+                            assisted. Admission and CAS
                             in less than 2 weeks I give it to A-COO Edu Consults.</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -587,10 +673,13 @@
 
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">The advice was more professional and detailed. Thank you for playing the role of an advisor and 
+                        <p class="mb-0">The advice was more professional and detailed. Thank you for playing the role of
+                            an advisor and
                             councillor. Soft landing and prepared mind…</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -603,10 +692,13 @@
 
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Zero charges sound like a scam but, I never paid a dime. I have been in England for 18 months. Thank 
+                        <p class="mb-0">Zero charges sound like a scam but, I never paid a dime. I have been in England
+                            for 18 months. Thank
                             you, A-COO Consults.</p>
                     </div>
-                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                        src="https://i.pinimg.com/236x/fc/04/73/fc047347b17f7df7ff288d78c8c281cf.jpg"
+                        style="width: 80px; height: 80px;">
                     <div class="mb-2">
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
@@ -621,88 +713,122 @@
     </div>
     <!-- Testimonial End -->
 
-     <!-- Booking Start -->
-     <div class="container-fluid my-5 px-0">
-        <div class="video wow fadeInUp" data-wow-delay="0.1s">
-            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                <span></span>
-            </button>
+    <!-- Booking Start -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <div class="video wow fadeInUp" data-wow-delay="0.1s">
+        <button type="button" class="btn-play" data-bs-toggle="modal"
+            data-src="https://youtu.be/-zqWR5_qdq0?si=nKyXAlgqv9l4y7pe" data-bs-target="#videoModal">
+            <span></span>
+        </button>
 
-            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content rounded-0">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- 16:9 aspect ratio -->
-                            <div class="ratio ratio-16x9">
-                                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                    allow="autoplay"></iframe>
-                            </div>
-                        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">A-coo Edu. Consults Limited</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="bg-light text-center p-5">
-                        <h1 class="mb-4">Get In Touch</h1>
-                        <form action="https://formsubmit.co/info@acooconsults.com" method="POST">
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <input type="hidden" name="_next" value="https://www.acooconsults.com/thankYou.html">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_template" value="table">
-                                <div class="col-12">
-                                    <textarea name="message" class="form-control border-0" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Contact Now</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <!-- This is where the YouTube video will be embedded -->
+                            <div id="youtubePlayer"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // This function creates an <iframe> (and YouTube player) after the API code downloads.
+        function onYouTubeIframeAPIReady() {
+            var player;
+            var videoSrc = document.querySelector('.btn-play').getAttribute('data-src');
+
+            // Replace 'youtubePlayer' with the ID of the div where you want to place the video
+            player = new YT.Player('youtubePlayer', {
+                height: '360',
+                width: '640',
+                videoId: getVideoId(videoSrc),
+                events: {
+                    'onReady': onPlayerReady,
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // Extract the video ID from the YouTube URL
+        function getVideoId(url) {
+            var match = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+            return match && match[1];
+        }
+    </script>
+    </div>
+    <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="bg-light text-center p-5">
+                    <h1 class="mb-4">Get In Touch</h1>
+                    <form action="https://formsubmit.co/info@acooconsults.com" method="POST">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Your Name"
+                                    style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" class="form-control border-0" placeholder="Your Email"
+                                    style="height: 55px;">
+                            </div>
+                            <input type="hidden" name="_next" value="https://www.acooconsults.com/thankYou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="col-12">
+                                <textarea name="message" class="form-control border-0"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Contact Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- Booking End -->
 
     <style>
-    .floating-whatsapp {
-    position: fixed;
-    bottom: 50px;
-    left: 20px;
-    z-index: 1000;
-}
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+            z-index: 1000;
+        }
 
-.floating-whatsapp a {
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366; /* WhatsApp green color */
-    color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 24px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
+        .floating-whatsapp a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            /* WhatsApp green color */
+            color: #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
 
-.floating-whatsapp a:hover {
-    background-color: #128C7E; /* Darker WhatsApp green color on hover */
-}
-
+        .floating-whatsapp a:hover {
+            background-color: #128C7E;
+            /* Darker WhatsApp green color on hover */
+        }
     </style>
 
     <div class="floating-whatsapp">
@@ -710,299 +836,291 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    
+
     <div class="container mt-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="text-secondary text-uppercase"></h6>
             <h1 class="mb-5">Our Partners</h1>
         </div>
         <div class="row">
-          <div class="col-md-2">
-            <img src="img/p1.jpeg" alt="Partner 1" class="img-fluid">
-          </div>
-          <div class="col-md-2">
-            <img src="img//p2.jpeg" alt="Partner 2" class="img-fluid">
-          </div>
-          <div class="col-md-2">
-            <img src="img/p3.jpeg" alt="Partner 3" class="img-fluid">
-          </div>
-          <div class="col-md-2">
-            <img src="img/p4.jpeg" alt="Partner 4" class="img-fluid">
-          </div>
-          <div class="col-md-2">
-            <img src="img/p5.jpeg" alt="Partner 5" class="img-fluid">
-          </div>
-          <!-- <div class="col-md-2">
+            <div class="col-md-2">
+                <img src="img/p1.jpeg" alt="Partner 1" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="img//p2.jpeg" alt="Partner 2" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="img/p3.jpeg" alt="Partner 3" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="img/p4.jpeg" alt="Partner 4" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="img/p5.jpeg" alt="Partner 5" class="img-fluid">
+            </div>
+            <!-- <div class="col-md-2">
             <img src="logo6.png" alt="Partner 6" class="img-fluid">
           </div>
           <div class="col-md-2">
             <img src="logo7.png" alt="Partner 7" class="img-fluid">
           </div> -->
         </div>
-      </div>
+    </div>
 
-      <style>
+    <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
         * {
-        font-family: Open Sans;
+            font-family: Open Sans;
         }
 
         section {
-        width: 100%;
-        display: inline-block;
-        background: #333;
-        height: 50vh;
-        text-align: center;
-        font-size: 22px;
-        font-weight: 700;
-        text-decoration: underline;
+            width: 100%;
+            display: inline-block;
+            background: #333;
+            height: 50vh;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: underline;
         }
 
-        .footer-distributed{
-        background: #17224D;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
-        font: bold 16px sans-serif;
-        padding: 55px 50px;
+        .footer-distributed {
+            background: #17224D;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px;
         }
 
         .footer-distributed .footer-left,
         .footer-distributed .footer-center,
-        .footer-distributed .footer-right{
-        display: inline-block;
-        vertical-align: top;
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
         }
 
         /* Footer left */
 
-        .footer-distributed .footer-left{
-        width: 40%;
+        .footer-distributed .footer-left {
+            width: 40%;
         }
 
         /* The company logo */
 
-        .footer-distributed h3{
-        color:  #ffffff;
-        font: normal 36px 'Open Sans', cursive;
-        margin: 0;
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px 'Open Sans', cursive;
+            margin: 0;
         }
 
-        .footer-distributed h3 span{
-        color:  lightseagreen;
+        .footer-distributed h3 span {
+            color: lightseagreen;
         }
 
         /* Footer links */
 
-        .footer-distributed .footer-links{
-        color:  #ffffff;
-        margin: 20px 0 12px;
-        padding: 0;
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
         }
 
-        .footer-distributed .footer-links a{
-        display:inline-block;
-        line-height: 1.8;
-        font-weight:400;
-        text-decoration: none;
-        color:  inherit;
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .footer-distributed .footer-company-name{
-        color:  wheat;
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
+        .footer-distributed .footer-company-name {
+            color: wheat;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
         }
 
         /* Footer Center */
 
-        .footer-distributed .footer-center{
-        width: 35%;
+        .footer-distributed .footer-center {
+            width: 35%;
         }
 
-        .footer-distributed .footer-center i{
-        background-color:  #33383b;
-        color: #ffffff;
-        font-size: 25px;
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 42px;
-        margin: 10px 15px;
-        vertical-align: middle;
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
         }
 
-        .footer-distributed .footer-center p{
-        display: inline-block;
-        color: #ffffff;
-        font-weight:400;
-        vertical-align: middle;
-        margin:0;
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
         }
 
-        .footer-distributed .footer-center p span{
-        display:block;
-        font-weight: normal;
-        font-size:14px;
-        line-height:2;
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
         }
 
-        .footer-distributed .footer-center p a{
-        color:  lightseagreen;
-        text-decoration: underline;
+        .footer-distributed .footer-center p a {
+            color: lightseagreen;
+            text-decoration: underline;
         }
 
         .footer-distributed .footer-links a:before {
-        content: "|";
-        font-weight:300;
-        font-size: 20px;
-        left: 0;
-        color: #fff;
-        display: inline-block;
-        padding-right: 5px;
+            content: "|";
+            font-weight: 300;
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
         }
 
         .footer-distributed .footer-links .link-1:before {
-        content: none;
+            content: none;
         }
 
         /* Footer Right */
 
-        .footer-distributed .footer-right{
-        width: 20%;
+        .footer-distributed .footer-right {
+            width: 20%;
         }
 
-        .footer-distributed .footer-company-about{
-        line-height: 20px;
-        color:  #92999f;
-        font-size: 13px;
-        font-weight: normal;
-        margin: 0;
+        .footer-distributed .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
         }
 
-        .footer-distributed .footer-company-about span{
-        display: block;
-        color:  #ffffff;
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 20px;
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        .footer-distributed .footer-icons{
-        margin-top: 25px;
+        .footer-distributed .footer-icons {
+            margin-top: 25px;
         }
 
-        .footer-distributed .footer-icons a{
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        background-color: #17224D;
-        border-radius: 2px;
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #17224D;
+            border-radius: 2px;
 
-        font-size: 20px;
-        color: #ffffff;
-        text-align: center;
-        line-height: 35px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
 
-        margin-right: 3px;
-        margin-bottom: 5px;
+            margin-right: 3px;
+            margin-bottom: 5px;
         }
 
         /* If you don't want the footer to be responsive, remove these media queries */
 
         @media (max-width: 880px) {
 
-        .footer-distributed{
-            font: bold 14px sans-serif;
-        }
+            .footer-distributed {
+                font: bold 14px sans-serif;
+            }
 
-        .footer-distributed .footer-left,
-        .footer-distributed .footer-center,
-        .footer-distributed .footer-right{
-            display: block;
-            width: 100%;
-            margin-bottom: 40px;
-            text-align: center;
-        }
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
 
-        .footer-distributed .footer-center i{
-            margin-left: 0;
-        }
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
 
         }
     </style>
 
     <!-- Footer Start -->
     <footer class="footer-distributed">
-    
-          <div class="footer-left">
-    
+
+        <div class="footer-left">
+
             <img src="./img/logo.jpeg" width="60" height="60" alt="company's logo">
             <p class="footer-links">
-              <a href="/index.html" class="link-1">Home</a>
-              
-              <a href="/blog.html">Blog</a>
-            
-              <a href="/about.html">About</a>
-            
-              <a href="contact.html">Contact</a>
+                <a href="/index.html" class="link-1">Home</a>
+
+                <a href="/blog.html">Blog</a>
+
+                <a href="/about.html">About</a>
+
+                <a href="contact.html">Contact</a>
             </p>
-    
+
             <p class="footer-company-name ">ACOO © 2023</p>
-          </div>
-    
-          <div class="footer-center">
-    <br>
-    <br>
-    <br>
-    <br>
+        </div>
+
+        <div class="footer-center">
+            <br>
+            <br>
+            <br>
+            <br>
             <div>
-              <a href="">
-              <p>Terms and Conditions</p>
-              </a>
+                <a href="">
+                    <p>Terms and Conditions</p>
+                </a>
             </div>
             <div>
                 <a href="">
-                <p>Privacy Policy</p>
+                    <p>Privacy Policy</p>
                 </a>
             </div>
-    
-          </div>
-    
-          <div class="footer-right">
-    <br>
+
+        </div>
+
+        <div class="footer-right">
+            <br>
             <p class="footer-company-about">
-              <span>About the company</span>
-              At A-COO Edu Consult, your success is our priority, and our success is dependent on your success
+                <span>About the company</span>
+                At A-COO Edu Consult, your success is our priority, and our success is dependent on your success
             </p>
-    
+
             <div class="footer-icons">
-    
-                <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.facebook.com/profile.php?id=100077806414902&mibextid=ZbWKwL"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-    
+
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social"
+                    href="https://www.facebook.com/profile.php?id=100077806414902&mibextid=ZbWKwL"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+
             </div>
-    
-          </div>
-    
-        </footer>
+
+        </div>
+
+    </footer>
     <!-- Footer End -->
 
 
